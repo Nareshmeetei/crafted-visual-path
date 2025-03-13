@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,22 +34,6 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -79,14 +64,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -94,8 +71,95 @@
   * {
     @apply border-border;
   }
-
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-content-bg text-content-text font-sans antialiased;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl sm:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+  
+  a {
+    @apply transition-colors duration-200;
+  }
+  
+  input, textarea {
+    @apply bg-transparent;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply block py-2 text-sidebar-text hover:underline transition-all duration-200;
+  }
+  
+  .sidebar-link.active {
+    @apply underline;
+  }
+  
+  .content-container {
+    @apply animate-fade-in p-10 md:p-14 max-w-5xl mx-auto;
+  }
+  
+  .page-title {
+    @apply text-3xl sm:text-4xl font-normal mb-8;
+  }
+  
+  .dashed-divider {
+    @apply w-full h-px my-8 border-t border-dashed border-gray-300;
+  }
+  
+  .image-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .image-container {
+    @apply aspect-[4/3] w-full bg-gray-700 overflow-hidden mb-2;
+  }
+  
+  .social-icon {
+    @apply inline-block mr-4 text-sidebar-text hover:opacity-70 transition-opacity;
+  }
+  
+  .art-item, .design-item, .project-item, .stuff-item {
+    @apply animate-slide-in;
+  }
+  
+  .art-item:nth-child(1), .design-item:nth-child(1), .project-item:nth-child(1), .stuff-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .art-item:nth-child(2), .design-item:nth-child(2), .project-item:nth-child(2), .stuff-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .art-item:nth-child(3), .design-item:nth-child(3), .project-item:nth-child(3), .stuff-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .art-item:nth-child(4), .design-item:nth-child(4), .project-item:nth-child(4), .stuff-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .art-item:nth-child(5), .design-item:nth-child(5), .project-item:nth-child(5), .stuff-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  .art-item:nth-child(6), .design-item:nth-child(6), .project-item:nth-child(6), .stuff-item:nth-child(6) {
+    animation-delay: 0.6s;
   }
 }
