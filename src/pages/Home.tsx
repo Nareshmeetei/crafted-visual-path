@@ -12,29 +12,29 @@ import {
 const Home = () => {
   return (
     <div className="animate-fade-in">
-      <div className="mt-10 mb-20">
+      <div className="mt-10 mb-10 flex justify-between items-center">
         <Link 
           to="/art" 
           className="inline-block border border-gray-400 px-4 py-2 hover:bg-gray-100 transition-colors"
         >
           Show All Art <ArrowRight className="inline-block ml-2" size={16} />
         </Link>
+        
+        <div className="flex space-x-2">
+          <button className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-100">
+            <ChevronLeft size={20} className="text-gray-600" />
+          </button>
+          <button className="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-100">
+            <ChevronRight size={20} className="text-gray-600" />
+          </button>
+        </div>
       </div>
       
       <div className="max-w-4xl mx-auto">
         <Carousel className="w-full max-w-[600px] mx-auto">
-          <div className="absolute top-4 right-4 z-10 flex space-x-2">
-            <button className="p-2 rounded-full border border-gray-300 bg-white/80 hover:bg-white">
-              <ChevronLeft size={20} className="text-gray-600" />
-            </button>
-            <button className="p-2 rounded-full border border-gray-300 bg-white/80 hover:bg-white">
-              <ChevronRight size={20} className="text-gray-600" />
-            </button>
-          </div>
-          
           <CarouselContent>
             <CarouselItem>
-              <div className="aspect-square max-w-[600px] bg-gray-900 mb-6 relative overflow-hidden">
+              <div className="aspect-square max-w-[600px] mb-6 relative overflow-hidden">
                 <img 
                   src="/lovable-uploads/e4a39794-c0a0-4bbd-92fa-5c985b9c5d83.png" 
                   alt="Promise - Artwork" 
