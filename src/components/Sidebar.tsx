@@ -89,15 +89,15 @@ const Sidebar = () => {
           handleSubscribe={handleSubscribe} 
         />
         
-        <div className="mt-4 flex space-x-4">
-          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="Twitter">
-            <Twitter size={20} />
+        <div className="mt-4 flex justify-center space-x-6">
+          <a href="#" className="text-black hover:text-gray-700 transition-colors" aria-label="Twitter">
+            <Twitter size={24} strokeWidth={2} />
           </a>
-          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="LinkedIn">
-            <Linkedin size={20} />
+          <a href="#" className="text-black hover:text-gray-700 transition-colors" aria-label="LinkedIn">
+            <Linkedin size={24} strokeWidth={2} />
           </a>
-          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="Instagram">
-            <Instagram size={20} />
+          <a href="#" className="text-black hover:text-gray-700 transition-colors" aria-label="Instagram">
+            <Instagram size={24} strokeWidth={2} />
           </a>
         </div>
       </div>
