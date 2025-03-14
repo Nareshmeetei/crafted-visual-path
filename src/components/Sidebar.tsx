@@ -17,9 +17,13 @@ const Sidebar = () => {
   return (
     <aside className="bg-sidebar-bg min-h-screen w-full md:w-[300px] md:fixed md:top-0 md:left-0 md:bottom-0 p-8 flex flex-col">
       <div className="flex-grow">
-        <h1 className="text-3xl font-medium mb-10 mt-4">
-          <NavLink to="/" className="font-bold tracking-wide">
-            NARESH MEETEI
+        <h1 className="mb-10 mt-4">
+          <NavLink to="/" className="block">
+            <img 
+              src="/lovable-uploads/c8d6f52d-c143-4f41-bd28-adaf79bc8091.png" 
+              alt="NARESH MEETEI" 
+              className="h-16 w-auto"
+            />
           </NavLink>
         </h1>
         
