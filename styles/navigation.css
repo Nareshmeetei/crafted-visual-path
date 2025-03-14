@@ -1,0 +1,9 @@
+.nav-menu {
+  display: flex;
+  gap: 0.1rem;  /* Very small gap between items */
+}
+
+.nav-menu a {
+  margin: 0;  /* Remove margin completely */
+  padding: 0.2rem;  /* Small padding for clickability */
+} 
