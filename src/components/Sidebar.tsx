@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Twitter, Linkedin, Instagram } from "lucide-react";
 import Newsletter from "./Newsletter";
 
 const Sidebar = () => {
@@ -88,15 +89,15 @@ const Sidebar = () => {
           handleSubscribe={handleSubscribe} 
         />
         
-        <div className="mt-4 flex">
-          <a href="#" className="social-icon" aria-label="Twitter">
-            <span className="inline-block">𝕏</span>
+        <div className="mt-4 flex space-x-4">
+          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="Twitter">
+            <Twitter size={20} />
           </a>
-          <a href="#" className="social-icon" aria-label="LinkedIn">
-            <span className="inline-block">in</span>
+          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="LinkedIn">
+            <Linkedin size={20} />
           </a>
-          <a href="#" className="social-icon" aria-label="Instagram">
-            <span className="inline-block">ig</span>
+          <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors" aria-label="Instagram">
+            <Instagram size={20} />
           </a>
         </div>
       </div>
