@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art - Naresh Meetei</title>
+    <link rel="icon" type="image/x-icon" href="images/naresh-favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/my-logo.svg" alt="NARESH MEETEI" class="logo-image">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="thoughts.html" class="nav-link">Thoughts</a>
+                <a href="art.html" class="nav-link active">Art</a>
+                <a href="design.html" class="nav-link">Design</a>
+                <a href="stuff-i-like.html" class="nav-link">Stuff I Like</a>
+            </nav>
+            
+            <div class="newsletter">
+                <p>Sharing my journey</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <a href="https://x.com/NareshMeetei11" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/nareshmeetei/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon linkedin-icon">
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Grid View -->
+            <div class="art-grid-view">
+                <h1 class="page-title">Art</h1>
+                <div class="art-grid">
+                    <div class="art-item" data-id="1">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #1</h2>
+                    </div>
+                    <div class="art-item" data-id="2">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #2</h2>
+                    </div>
+                    <div class="art-item" data-id="3">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #3</h2>
+                    </div>
+                    <div class="art-item" data-id="4">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #4</h2>
+                    </div>
+                    <div class="art-item" data-id="5">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #5</h2>
+                    </div>
+                    <div class="art-item" data-id="6">
+                        <div class="art-image"></div>
+                        <h2 class="art-title">Art #6</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detail View -->
+            <div class="art-detail-view" style="display: none;">
+                <div class="content-header">
+                    <button class="show-all">Show All Art</button>
+                    <div class="navigation-arrows">
+                        <button class="nav-arrow prev" aria-label="Previous">←</button>
+                        <button class="nav-arrow next" aria-label="Next">→</button>
+                    </div>
+                </div>
+                <div class="artwork">
+                    <img src="" alt="" class="artwork-image">
+                    <h2 class="artwork-title">Promise</h2>
+                    <p class="artwork-description">Ink on paper then scanned and digitized it.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

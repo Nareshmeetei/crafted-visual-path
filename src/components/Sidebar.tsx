@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Twitter, Linkedin, Instagram } from "lucide-react";
@@ -16,7 +15,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="bg-sidebar-bg min-h-screen w-full md:w-[300px] md:fixed md:top-0 md:left-0 md:bottom-0 p-8 flex flex-col">
+    <aside className="bg-[#EFEFEF] min-h-screen w-full md:w-[300px] md:fixed md:top-0 md:left-0 md:bottom-0 p-8 flex flex-col">
       <div className="flex-grow">
         <h1 className="mb-10 mt-4">
           <NavLink to="/" className="block">

@@ -1,0 +1,43 @@
+:root {
+  --background-color: #EFEFEF;
+}
+
+html,
+body {
+  background-color: var(--background-color) !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.nav-menu {
+  background-color: #EFEFEF;
+  display: flex;
+  gap: 0.1rem;
+}
+
+.nav-menu a {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+/* Make sure no other elements override the background */
+#__next {
+  background-color: var(--background-color) !important;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #EFEFEF;
+}
+
+* {
+  background-color: var(--background-color);
+}
+
+.home-illustration {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+} 

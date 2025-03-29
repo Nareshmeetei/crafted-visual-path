@@ -1,9 +1,17 @@
 .nav-menu {
   display: flex;
   gap: 0.1rem;  /* Very small gap between items */
+  background-color: #EFEFEF !important;  /* Added navigation background color */
 }
 
 .nav-menu a {
   margin: 0;  /* Remove margin completely */
   padding: 0.2rem;  /* Small padding for clickability */
+  background-color: #EFEFEF;
+}
+
+body {
+  background-color: #EFEFEF;  /* Added main background color */
+  margin: 0;  /* Remove default margin */
+  padding: 0;  /* Remove default padding */
 } 

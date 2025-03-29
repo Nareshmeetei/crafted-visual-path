@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts - Naresh Meetei</title>
+    <link rel="icon" type="image/x-icon" href="/images/naresh-favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="thoughts-page">
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="/index.html" class="logo-link">
+                    <img src="/images/my-logo.svg" alt="NARESH MEETEI" class="logo-image">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="/thoughts.html" class="nav-link active">Thoughts</a>
+                <a href="/art.html" class="nav-link">Art</a>
+                <a href="/design.html" class="nav-link">Design</a>
+                <a href="/stuff-i-like.html" class="nav-link">Stuff I Like</a>
+            </nav>
+            
+            <div class="newsletter">
+                <p>Sharing my journey</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <a href="https://x.com/NareshMeetei11" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/nareshmeetei/" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/linkedin.svg" alt="LinkedIn" class="social-icon linkedin-icon">
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Grid View -->
+            <div class="thoughts-grid-view">
+                <h1 class="page-title">Thoughts</h1>
+                
+                <!-- Tags Filter -->
+                <div class="tags-filter">
+                    <button class="tag-button active" data-tag="all">All</button>
+                    <button class="tag-button" data-tag="Productivity">Productivity</button>
+                    <button class="tag-button" data-tag="Digital Wellness">Digital Wellness</button>
+                    <button class="tag-button" data-tag="Creativity">Creativity</button>
+                </div>
+
+                <div class="blog-posts">
+                    <!-- Blog posts will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <!-- Detail View -->
+            <div class="thoughts-detail-view" style="display: none;">
+                <div class="content-header">
+                    <button class="back-button" aria-label="Back">←</button>
+                </div>
+
+                <article class="thought-detail">
+                    <!-- Blog post content will be dynamically inserted here -->
+                </article>
+
+                <!-- Floating Navigation -->
+                <div class="floating-nav">
+                    <button class="nav-arrow prev" aria-label="Previous">←</button>
+                    <button class="nav-arrow next" aria-label="Next">→</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/js/blogPosts.js"></script>
+    <script type="module" src="/js/thoughts.js"></script>
+</body>
+</html> 

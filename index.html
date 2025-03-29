@@ -1,25 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naresh Meetei - Personal Portfolio</title>
-    <meta name="description" content="Personal website of Naresh Meetei, showcasing art, design, thoughts, projects, and more." />
-    <meta name="author" content="Naresh Meetei" />
-    <meta property="og:image" content="/og-image.png" />
-    <meta property="og:title" content="Naresh Meetei - Personal Portfolio" />
-    <meta property="og:description" content="Personal website of Naresh Meetei, showcasing art, design, thoughts, projects, and more." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naresh Meetei - Personal Portfolio" />
-    <meta name="twitter:description" content="Personal website of Naresh Meetei, showcasing art, design, thoughts, projects, and more." />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Naresh Meetei</title>
+    <link rel="icon" type="image/x-icon" href="/images/naresh-favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="/index.html" class="logo-link">
+                    <img src="/images/my-logo.svg" alt="NARESH MEETEI" class="logo-image">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="/thoughts.html" class="nav-link">Thoughts</a>
+                <a href="/art.html" class="nav-link">Art</a>
+                <a href="/design.html" class="nav-link">Design</a>
+                <a href="/stuff-i-like.html" class="nav-link">Stuff I Like</a>
+            </nav>
+            
+            <div class="newsletter">
+                <p>Sharing my journey</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+            <div class="social-links">
+                <a href="https://x.com/NareshMeetei11" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/nareshmeetei/" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/linkedin.svg" alt="LinkedIn" class="social-icon linkedin-icon">
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="about-content">
+                <div class="about-header">
+                    <img src="/images/naresh-meetei.jpg" alt="Naresh Meetei" class="profile-image">
+                    <div class="about-text-content">
+                        <h1 class="page-title">Hello, I'm Naresh Meetei.</h1>
+                        <p class="about-text">I find my happiness in simplifying.</p>
+                        <p class="about-text">I like anything related to art, design, tech, entrepreneurship, sustainability and mindfulness.</p>
+                        <p class="about-text">I believe everything gets better when you focus on simplifying them.</p>
+                        <p class="about-text">Less noise, more meaning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-grid">
+                    <div class="project-item" data-id="1">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">Hayoom Design</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                    <div class="project-item" data-id="2">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">EfHive</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                    <div class="project-item" data-id="3">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">Colfonto</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                    <div class="project-item" data-id="4">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">FckSubz</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                    <div class="project-item" data-id="5">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">ZenShifu</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                    <div class="project-item" data-id="6">
+                        <div class="project-image"></div>
+                        <h2 class="project-title">Radiantrex</h2>
+                        <p class="project-mrr">MRR: $0</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/script.js"></script>
+</body>
+</html> 
