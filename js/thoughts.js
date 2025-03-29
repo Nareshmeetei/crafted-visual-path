@@ -10,20 +10,20 @@ const prevButton = document.querySelector('.nav-arrow.prev');
 const nextButton = document.querySelector('.nav-arrow.next');
 const tagButtons = document.querySelectorAll('.tag-button');
 
-let currentPostId = null;
+let currentSlug = null;
 let filteredPosts = [...blogPosts];
 
 // Initialize the page
 function init() {
     renderBlogPosts(blogPosts);
     setupEventListeners();
-    checkUrlForPostId();
+    checkUrlForSlug();
 }
 
 // Render blog posts in grid view
 function renderBlogPosts(posts) {
     blogPostsContainer.innerHTML = posts.map(post => `
-        <article class="blog-post" data-id="${post.id}">
+        <article class="blog-post" data-slug="${post.slug}">
             <div class="blog-content">
                 <h2 class="blog-title">${post.title}</h2>
                 <p class="blog-excerpt">${post.excerpt}</p>
@@ -34,11 +34,11 @@ function renderBlogPosts(posts) {
 }
 
 // Show post detail
-function showPostDetail(postId) {
-    const post = blogPosts.find(p => p.id === postId);
+function showPostDetail(slug) {
+    const post = blogPosts.find(p => p.slug === slug);
     if (!post) return;
 
-    currentPostId = postId;
+    currentSlug = slug;
     thoughtDetail.innerHTML = `
         <h1 class="thought-detail-title">${post.title}</h1>
         <div class="thought-detail-image"></div>
@@ -50,13 +50,13 @@ function showPostDetail(postId) {
     gridView.style.display = 'none';
     detailView.style.display = 'block';
     window.scrollTo(0, 0);
-    updateUrl(postId);
+    updateUrl(slug);
     updateNavigationButtons();
 }
 
 // Show grid view
 function showGridView() {
-    currentPostId = null;
+    currentSlug = null;
     gridView.style.display = 'block';
     detailView.style.display = 'none';
     updateUrl();
@@ -64,37 +64,36 @@ function showGridView() {
 
 // Navigation functions
 function showNextPost() {
-    if (!currentPostId) return;
-    const currentIndex = filteredPosts.findIndex(p => p.id === currentPostId);
+    if (!currentSlug) return;
+    const currentIndex = filteredPosts.findIndex(p => p.slug === currentSlug);
     const nextPost = filteredPosts[currentIndex + 1] || filteredPosts[0];
-    showPostDetail(nextPost.id);
+    showPostDetail(nextPost.slug);
 }
 
 function showPreviousPost() {
-    if (!currentPostId) return;
-    const currentIndex = filteredPosts.findIndex(p => p.id === currentPostId);
+    if (!currentSlug) return;
+    const currentIndex = filteredPosts.findIndex(p => p.slug === currentSlug);
     const prevPost = filteredPosts[currentIndex - 1] || filteredPosts[filteredPosts.length - 1];
-    showPostDetail(prevPost.id);
+    showPostDetail(prevPost.slug);
 }
 
 // Update navigation buttons visibility
 function updateNavigationButtons() {
-    const currentIndex = filteredPosts.findIndex(p => p.id === currentPostId);
     prevButton.style.visibility = filteredPosts.length > 1 ? 'visible' : 'hidden';
     nextButton.style.visibility = filteredPosts.length > 1 ? 'visible' : 'hidden';
 }
 
 // URL management
-function updateUrl(postId = null) {
-    const url = postId ? `?post=${postId}` : window.location.pathname;
+function updateUrl(slug = null) {
+    const url = slug ? `/thoughts/${slug}` : '/thoughts';
     window.history.pushState({}, '', url);
 }
 
-function checkUrlForPostId() {
-    const params = new URLSearchParams(window.location.search);
-    const postId = params.get('post');
-    if (postId) {
-        showPostDetail(parseInt(postId));
+function checkUrlForSlug() {
+    const path = window.location.pathname;
+    const slug = path.split('/thoughts/')[1];
+    if (slug) {
+        showPostDetail(slug);
     }
 }
 
@@ -112,7 +111,7 @@ function setupEventListeners() {
     blogPostsContainer.addEventListener('click', (e) => {
         const post = e.target.closest('.blog-post');
         if (post) {
-            showPostDetail(parseInt(post.dataset.id));
+            showPostDetail(post.dataset.slug);
         }
     });
 
@@ -143,7 +142,7 @@ function setupEventListeners() {
 
     // Browser back/forward navigation
     window.addEventListener('popstate', () => {
-        checkUrlForPostId();
+        checkUrlForSlug();
     });
 }
 
