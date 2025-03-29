@@ -3,6 +3,7 @@ export const blogPosts = [
     {
         id: 4,
         title: 'How I Found Clarity and Changed My Life',
+        slug: 'finding-clarity-through-meditation',
         date: '2024-03-20',
         excerpt: 'I used to be like most people—chasing things I thought I needed but really just wanted. A bigger house, a better job, more recognition. Then, one decision changed everything...',
         content: `
@@ -63,6 +64,7 @@ export const blogPosts = [
     {
         id: 1,
         title: 'How I create a productive home office',
+        slug: 'creating-productive-home-office',
         date: '2024-03-15',
         excerpt: 'When it comes to setting up a productive home office, the design of your workspace plays a crucial role. Here are some key considerations...',
         content: `
@@ -99,6 +101,7 @@ export const blogPosts = [
     {
         id: 2,
         title: 'The Art of Digital Minimalism',
+        slug: 'art-of-digital-minimalism',
         date: '2024-03-10',
         excerpt: 'In today\'s digital age, finding balance and maintaining focus has become increasingly challenging. Here\'s how I approach digital minimalism...',
         content: `
@@ -126,6 +129,7 @@ export const blogPosts = [
     {
         id: 3,
         title: 'My Creative Process',
+        slug: 'my-creative-process',
         date: '2024-03-05',
         excerpt: 'Creativity isn\'t just about inspiration—it\'s about developing a consistent process that works for you. Here\'s a look into my approach...',
         content: `
