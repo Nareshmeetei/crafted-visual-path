@@ -1,32 +1,32 @@
 /* Reset and base styles */
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/Fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-family: 'Satoshi';
+    src: url('/Fonts/Satoshi-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/Fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-family: 'Satoshi';
+    src: url('/Fonts/Satoshi-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/Fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Satoshi';
+    src: url('/Fonts/Satoshi-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/Fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'Satoshi';
+    src: url('/Fonts/Satoshi-Black.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
@@ -38,7 +38,7 @@
 }
 
 body {
-    font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
     line-height: 1.6;
     color: #333;
