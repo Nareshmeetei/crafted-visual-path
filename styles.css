@@ -352,6 +352,7 @@ body {
     font-size: 24px;
     margin-bottom: 0.5rem;
     color: #333333;
+    font-weight: 900;
 }
 
 .artwork-description {
@@ -989,4 +990,98 @@ body {
     font-size: 16px;
     color: #666;
     line-height: 1.8;
+}
+
+/* Page titles and headings */
+.page-title,
+.blog-title,
+.art-title,
+.design-title,
+.project-title,
+.stuff-title,
+.section-title,
+.thought-detail-title,
+.thought-detail-subtitle,
+.design-detail-title,
+.design-detail-subtitle,
+.blog-post h3,
+.thought-detail-content h2,
+.thought-detail-content h3,
+.post-detail h2,
+.artwork-title {
+    font-weight: 900;
+}
+
+/* Specific heading sizes */
+.page-title {
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.blog-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.thought-detail-title {
+    font-size: 48px;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.thought-detail-subtitle {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.design-detail-title {
+    font-size: 48px;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.design-detail-subtitle {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.artwork-title {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.blog-post h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.thought-detail-content h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: #333;
+}
+
+.thought-detail-content h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    color: #333;
+}
+
+.post-detail h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.3;
 }
