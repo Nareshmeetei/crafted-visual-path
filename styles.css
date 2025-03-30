@@ -124,6 +124,7 @@ body {
     padding: 0.5rem;
     border: none;
     background: #FFFFFF;
+    font-size: 14px;
 }
 
 .subscribe-form button {
@@ -133,6 +134,7 @@ body {
     color: #FFFFFF;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    font-size: 14px;
 }
 
 .subscribe-form button:hover {
